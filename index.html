@@ -112,27 +112,16 @@
     /* ── MENU ITEMS ── */
     .menu-cat { margin-bottom: 3.5rem; }
     .menu-cat:last-child { margin-bottom: 0; }
-    .menu-cat-title {
-      font-family: 'Playfair Display', serif; font-size: 1.25rem; color: var(--gold);
-      padding-bottom: 0.65rem; border-bottom: 1px solid var(--border); margin-bottom: 0.25rem;
-    }
+    .menu-cat-title { font-family: 'Playfair Display', serif; font-size: 1.25rem; color: var(--gold); padding-bottom: 0.65rem; border-bottom: 1px solid var(--border); margin-bottom: 0.25rem; }
     .menu-cat-note { font-size: 0.75rem; color: var(--muted); margin-bottom: 1.25rem; font-style: italic; }
-
-    /* Restaurant-style menu rows */
     .menu-list { display: flex; flex-direction: column; }
-    .menu-row {
-      display: flex; align-items: baseline; gap: 0;
-      padding: 0.85rem 0;
-      border-bottom: 1px solid rgba(201,135,42,0.08);
-    }
+    .menu-row { display: flex; align-items: baseline; gap: 0; padding: 0.85rem 0; border-bottom: 1px solid rgba(201,135,42,0.08); }
     .menu-row:last-child { border-bottom: none; }
     .menu-row-left { flex: 1; min-width: 0; padding-right: 1rem; }
     .menu-row-name { font-size: 0.95rem; font-weight: 600; color: var(--cream); margin-bottom: 0.15rem; }
     .menu-row-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.5; }
     .menu-row-dots { flex: 1; border-bottom: 1px dotted rgba(201,135,42,0.25); margin: 0 0.75rem; min-width: 20px; position: relative; top: -0.35rem; }
     .menu-row-price { font-size: 0.95rem; font-weight: 700; color: var(--gold); white-space: nowrap; }
-
-    /* Two-column menu layout on wider screens */
     .menu-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 3rem; }
     .menu-2col .menu-list { display: flex; flex-direction: column; }
 
@@ -149,7 +138,7 @@
     .hours-note strong { color: var(--gold-lt); }
 
     /* ── LOCATION NOTICE ── */
-    .location-notice { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 2rem 2rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+    .location-notice { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 2rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
     .location-notice-icon { font-size: 2.2rem; flex-shrink: 0; }
     .location-notice-text { flex: 1; min-width: 180px; }
     .location-notice-text h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--cream); margin-bottom: 0.35rem; }
@@ -163,11 +152,6 @@
     .review-text { font-size: 0.9rem; color: var(--cream); line-height: 1.7; margin-bottom: 1.1rem; font-style: italic; }
     .review-author { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
     .review-source { font-size: 0.68rem; color: rgba(245,234,214,0.22); margin-top: 0.2rem; }
-
-    /* ── CATERING ── */
-    .callout { background: linear-gradient(135deg, rgba(201,135,42,0.12) 0%, rgba(201,135,42,0.04) 100%); border: 1px solid rgba(201,135,42,0.28); border-radius: var(--r); padding: 3.5rem 2.5rem; text-align: center; }
-    .callout h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--cream); margin-bottom: 0.75rem; }
-    .callout p { color: var(--muted); font-size: 0.95rem; max-width: 480px; margin: 0 auto 2rem; line-height: 1.7; }
 
     /* ── VISIT / MAP ── */
     .visit-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 3rem; align-items: start; }
@@ -184,7 +168,7 @@
     .contact-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 1.6rem 1.5rem; transition: border-color 0.2s, transform 0.2s; }
     .contact-card:hover { border-color: var(--border-h); transform: translateY(-2px); }
     .contact-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.65rem; }
-   .contact-card a { color: var(--cream); text-decoration: none; font-size: 0.88rem; display: block; line-height: 1.7; transition: color 0.2s; word-break: break-all; }
+    .contact-card a { color: var(--cream); text-decoration: none; font-size: 0.88rem; display: block; line-height: 1.7; transition: color 0.2s; word-break: break-all; }
     .contact-card a:hover { color: var(--gold); }
 
     /* ── FOOTER ── */
@@ -194,7 +178,10 @@
     .footer-links { display: flex; justify-content: center; gap: 1.75rem; flex-wrap: wrap; margin-bottom: 2rem; }
     .footer-links a { color: var(--muted); text-decoration: none; font-size: 0.8rem; transition: color 0.2s; }
     .footer-links a:hover { color: var(--gold); }
-    .footer-copy { font-size: 0.7rem; color: rgba(245,234,214,0.18); }
+    .footer-copy { font-size: 0.7rem; color: rgba(245,234,214,0.18); margin-bottom: 0.4rem; }
+    .footer-credit { font-size: 0.68rem; color: rgba(245,234,214,0.12); }
+    .footer-credit a { color: rgba(245,234,214,0.2); text-decoration: none; transition: color 0.2s; }
+    .footer-credit a:hover { color: var(--gold); }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
@@ -215,10 +202,8 @@
       .gallery { grid-template-columns: 1fr 1fr; }
       .hero-actions { flex-direction: column; align-items: center; }
       .btn { width: 100%; max-width: 300px; text-align: center; }
-      .callout { padding: 2.5rem 1.5rem; }
       .section { padding: 4rem 1.25rem; }
       .location-notice { flex-direction: column; text-align: center; align-items: center; }
-      .location-notice .btn { width: 100%; max-width: 280px; text-align: center; }
       .about-grid { grid-template-columns: 1fr !important; }
       .about-grid > div:last-child { display: none; }
     }
@@ -232,17 +217,12 @@
 <!-- NAV -->
 <nav>
   <div class="nav-logo">
-    <!-- TO ADD LOGO: replace below div with <img src="images/logo.png" alt="Pilón Authentic Cuban" style="height:40px;width:auto;" /> -->
-    <div style="display:flex;align-items:center;gap:0.6rem;">
-      <div style="width:36px;height:36px;border-radius:8px;background:var(--card);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1rem;opacity:0.6;">🪴</div>
-      <span>Pilón</span>
-    </div>
+    <img src="logo.png" alt="Pilón Authentic Cuban" style="height:42px;width:auto;" />
   </div>
   <ul class="nav-links">
     <li><a href="#menu">Menu</a></li>
     <li><a href="#hours">Hours</a></li>
     <li><a href="#visit">Visit Us</a></li>
-    <li><a href="#catering">Catering</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="tel:9046491444" class="nav-cta">Call to Order</a></li>
   </ul>
@@ -352,7 +332,6 @@
       <div class="section-title">Our Menu</div>
       <p class="section-desc">Traditional Cuban dishes made fresh daily. All entrees served with your choice of 2 side dishes.</p>
     </div>
-
     <div class="menu-tabs-wrap">
       <div class="menu-tabs">
         <button class="tab-btn active" onclick="showTab(event,'meals')">Meals</button>
@@ -360,9 +339,7 @@
       </div>
     </div>
 
-    <!-- MEALS -->
     <div class="tab-panel active" id="tab-meals">
-
       <div class="menu-cat">
         <div class="menu-cat-title">Aperitivos y Más — Appetizers</div>
         <div class="menu-list">
@@ -372,7 +349,6 @@
           <div class="menu-row"><div class="menu-row-left"><div class="menu-row-name">Cuban Tamale</div></div><div class="menu-row-dots"></div><div class="menu-row-price">$5</div></div>
         </div>
       </div>
-
       <div class="menu-cat">
         <div class="menu-cat-title">Desayuno — Breakfast</div>
         <div class="menu-list">
@@ -383,7 +359,6 @@
           <div class="menu-row"><div class="menu-row-left"><div class="menu-row-name">Bistec a Caballo</div><div class="menu-row-desc">Steak &amp; 2 fried eggs · French fries or Cuban toast</div></div><div class="menu-row-dots"></div><div class="menu-row-price">$14</div></div>
         </div>
       </div>
-
       <div class="menu-cat">
         <div class="menu-cat-title">Sandwiches</div>
         <div class="menu-2col">
@@ -401,7 +376,6 @@
           </div>
         </div>
       </div>
-
       <div class="menu-cat">
         <div class="menu-cat-title">Entrees</div>
         <div class="menu-cat-note">All entrees served with your choice of 2 side dishes</div>
@@ -418,7 +392,6 @@
           </div>
         </div>
       </div>
-
       <div class="menu-cat">
         <div class="menu-cat-title">Acompañantes — Side Dishes</div>
         <div class="menu-2col">
@@ -433,7 +406,6 @@
           </div>
         </div>
       </div>
-
       <div class="menu-cat">
         <div class="menu-cat-title">Postres — Desserts</div>
         <div class="menu-list">
@@ -443,10 +415,8 @@
           <div class="menu-row"><div class="menu-row-left"><div class="menu-row-name">Churros</div></div><div class="menu-row-dots"></div><div class="menu-row-price">$5</div></div>
         </div>
       </div>
+    </div>
 
-    </div><!-- /tab-meals -->
-
-    <!-- DRINKS -->
     <div class="tab-panel" id="tab-drinks">
       <div class="menu-cat">
         <div class="menu-cat-title">Drinks &amp; Batidos</div>
@@ -458,7 +428,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -473,7 +442,6 @@
     <div class="hours-grid">
       <div class="hours-card">
         <h3>Weekly Schedule</h3>
-        <!-- UPDATE WITH REAL HOURS -->
         <div class="hours-row"><span class="day">Monday</span><span class="closed">Closed</span></div>
         <div class="hours-row"><span class="day">Tuesday</span><span class="time">11:00 AM – 8:00 PM</span></div>
         <div class="hours-row"><span class="day">Wednesday</span><span class="time">11:00 AM – 8:00 PM</span></div>
@@ -507,7 +475,6 @@
       <p class="section-desc">Don't take our word for it — here's what our customers have to say.</p>
     </div>
     <div class="reviews-grid">
-      <!-- REPLACE WITH REAL GOOGLE REVIEWS -->
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
         <div class="review-text">"Paste a real Google review here. Pick ones that mention specific dishes or the experience."</div>
@@ -531,7 +498,7 @@
 </section>
 
 <!-- SOCIALS -->
-<section class="section section-alt">
+<section class="section">
   <div class="container">
     <div class="section-head center">
       <div class="eyebrow">Follow Along</div>
@@ -539,27 +506,14 @@
       <p class="section-desc">Stay up to date on daily specials, location updates, and new menu items.</p>
     </div>
     <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
-      <a href="https://instagram.com/PilonAuthenticCuban" target="_blank" class="btn btn-ig" style="min-width:220px;text-align:center;">
-        📸 &nbsp; Instagram
-      </a>
+      <a href="https://instagram.com/PilonAuthenticCuban" target="_blank" class="btn btn-ig" style="min-width:220px;text-align:center;">📸 &nbsp; Instagram</a>
     </div>
     <p style="text-align:center;color:var(--muted);font-size:0.82rem;margin-top:1rem;">@PilonAuthenticCuban</p>
   </div>
 </section>
 
-<!-- CATERING -->
-<section class="section section-alt" id="catering">
-  <div class="container-narrow">
-    <div class="callout">
-      <h2>Available for Catering &amp; Events</h2>
-      <p>We bring the full Pilón menu to your event — birthdays, weddings, corporate lunches, private parties. Real Cuban food, served fresh on location.</p>
-      <a href="tel:9046491444" class="btn btn-gold">Get in Touch</a>
-    </div>
-  </div>
-</section>
-
 <!-- VISIT + MAP -->
-<section class="section" id="visit">
+<section class="section section-alt" id="visit">
   <div class="container">
     <div class="section-head">
       <div class="eyebrow">Come Find Us</div>
@@ -581,7 +535,7 @@
 </section>
 
 <!-- CONTACT -->
-<section class="section section-alt" id="contact">
+<section class="section" id="contact">
   <div class="container">
     <div class="section-head center">
       <div class="eyebrow">Get in Touch</div>
@@ -598,19 +552,18 @@
 
 <!-- FOOTER -->
 <footer>
-  <!-- TO ADD LOGO: replace below div with <img src="images/logo.png" alt="Pilón Authentic Cuban" style="height:60px;width:auto;margin-bottom:0.75rem;" /> -->
-  <div style="width:60px;height:60px;border-radius:12px;background:var(--card);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.5rem;opacity:0.5;margin:0 auto 0.75rem;">🪴</div>
+  <img src="logo.png" alt="Pilón Authentic Cuban" style="height:70px;width:auto;margin:0 auto 1rem;display:block;" />
   <div class="footer-logo">Pilón Authentic Cuban</div>
   <div class="footer-tag">Cuban Roots. Real Flavor.</div>
   <div class="footer-links">
     <a href="#menu">Menu</a>
     <a href="#hours">Hours</a>
     <a href="#visit">Visit</a>
-    <a href="#catering">Catering</a>
     <a href="#contact">Contact</a>
     <a href="https://instagram.com/PilonAuthenticCuban" target="_blank">Instagram</a>
   </div>
   <div class="footer-copy">© 2026 Pilón Authentic Cuban · Jacksonville, FL · pilonauthenticcuban.com</div>
+  <div class="footer-credit">Website designed &amp; managed by <a href="https://oboperations.com" target="_blank">OB Operations</a></div>
 </footer>
 
 <script>
