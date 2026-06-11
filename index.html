@@ -101,9 +101,22 @@
     .gallery-placeholder .ph-icon { font-size: 2rem; opacity: 0.3; }
 
     /* ── MENU TABS ── */
-    .menu-tabs-wrap { display: flex; justify-content: center; margin-bottom: 3rem; }
-    .menu-tabs { display: inline-flex; gap: 0.3rem; background: var(--card); border: 1px solid var(--border); border-radius: 50px; padding: 0.3rem; }
-    .tab-btn { background: transparent; border: none; color: var(--muted); font-family: 'Inter', sans-serif; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; padding: 0.6rem 1.6rem; border-radius: 50px; cursor: pointer; transition: all 0.2s; white-space: nowrap; }
+    .menu-tabs-wrap {
+      display: flex; justify-content: center; margin-bottom: 3rem;
+    }
+    .menu-tabs {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 0.4rem; background: var(--card);
+      border: 1px solid var(--border); border-radius: var(--r);
+      padding: 0.5rem;
+    }
+    .tab-btn {
+      background: transparent; border: none; color: var(--muted);
+      font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 0.55rem 1.2rem; border-radius: 50px;
+      cursor: pointer; transition: all 0.2s; white-space: nowrap;
+    }
     .tab-btn:hover { color: var(--cream); }
     .tab-btn.active { background: var(--gold); color: var(--black); box-shadow: 0 2px 12px rgba(201,135,42,0.4); }
     .tab-panel { display: none; }
@@ -115,7 +128,7 @@
     .menu-cat-title { font-family: 'Playfair Display', serif; font-size: 1.25rem; color: var(--gold); padding-bottom: 0.65rem; border-bottom: 1px solid var(--border); margin-bottom: 0.25rem; }
     .menu-cat-note { font-size: 0.75rem; color: var(--muted); margin-bottom: 1.25rem; font-style: italic; }
     .menu-list { display: flex; flex-direction: column; }
-    .menu-row { display: flex; align-items: baseline; gap: 0; padding: 0.85rem 0; border-bottom: 1px solid rgba(201,135,42,0.08); }
+    .menu-row { display: flex; align-items: baseline; padding: 0.85rem 0; border-bottom: 1px solid rgba(201,135,42,0.08); }
     .menu-row:last-child { border-bottom: none; }
     .menu-row-left { flex: 1; min-width: 0; padding-right: 1rem; }
     .menu-row-name { font-size: 0.95rem; font-weight: 600; color: var(--cream); margin-bottom: 0.15rem; }
@@ -123,7 +136,6 @@
     .menu-row-dots { flex: 1; border-bottom: 1px dotted rgba(201,135,42,0.25); margin: 0 0.75rem; min-width: 20px; position: relative; top: -0.35rem; }
     .menu-row-price { font-size: 0.95rem; font-weight: 700; color: var(--gold); white-space: nowrap; }
     .menu-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 3rem; }
-    .menu-2col .menu-list { display: flex; flex-direction: column; }
 
     /* ── HOURS ── */
     .hours-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 1rem; align-items: start; }
@@ -217,7 +229,7 @@
 <!-- NAV -->
 <nav>
   <div class="nav-logo">
-    <img src="logo.png" alt="Pilón Authentic Cuban" style="height:42px;width:auto;" />
+    <img src="logo.png" alt="Pilón Authentic Cuban" style="height:80px;width:auto;" />
   </div>
   <ul class="nav-links">
     <li><a href="#menu">Menu</a></li>
@@ -244,6 +256,7 @@
     <p class="hero-sub">Traditional Cuban dishes made from scratch, served fresh daily. If you've had Cuban food before, you'll taste the difference.</p>
     <div class="hero-actions">
       <a href="#menu" class="btn btn-gold">View Full Menu</a>
+      <a href="menu.jpg" target="_blank" class="btn btn-outline">View Physical Menu</a>
       <a href="tel:9046491444" class="btn btn-outline">(904) 649-1444</a>
     </div>
   </div>
@@ -266,22 +279,16 @@
       <div>
         <div class="eyebrow">About Us</div>
         <div class="section-title" style="margin-bottom:1.5rem;">Cuban Food,<br>Done Right.</div>
-        <p style="color:var(--muted);font-size:0.98rem;line-height:1.85;margin-bottom:1.25rem;">
-          Pilón is a Jacksonville-based Cuban food truck dedicated to one thing — serving authentic Cuban food the way it's meant to be made. No shortcuts, no substitutions.
-        </p>
-        <p style="color:var(--muted);font-size:0.98rem;line-height:1.85;margin-bottom:1.25rem;">
-          Every item on our menu is a traditional Cuban dish prepared fresh daily. From the Lechón Asado to the pressed Cubano, everything is made with the same ingredients and techniques that define Cuban cuisine.
-        </p>
-        <p style="color:var(--muted);font-size:0.98rem;line-height:1.85;">
-          We take pride in what we serve and it shows in every plate.
-        </p>
+        <p style="color:var(--muted);font-size:0.98rem;line-height:1.85;margin-bottom:1.25rem;">Pilón is a Jacksonville-based Cuban food truck dedicated to one thing — serving authentic Cuban food the way it's meant to be made. No shortcuts, no substitutions.</p>
+        <p style="color:var(--muted);font-size:0.98rem;line-height:1.85;margin-bottom:1.25rem;">Every item on our menu is a traditional Cuban dish prepared fresh daily. From the Lechón Asado to the pressed Cubano, everything is made with the same ingredients and techniques that define Cuban cuisine.</p>
+        <p style="color:var(--muted);font-size:0.98rem;line-height:1.85;">We take pride in what we serve and it shows in every plate.</p>
         <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border);">
           <div style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--gold);margin-bottom:0.2rem;">Gabriel Pérez</div>
           <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);">Owner, Pilón Authentic Cuban</div>
         </div>
       </div>
       <div>
-        <!-- TO ADD: <img src="images/gabriel.jpg" alt="Gabriel Pérez, Owner of Pilón" style="width:100%;border-radius:var(--r);border:1px solid var(--border);" /> -->
+        <!-- TO ADD: <img src="images/gabriel.jpg" alt="Gabriel Pérez" style="width:100%;border-radius:var(--r);border:1px solid var(--border);" /> -->
         <div style="width:100%;aspect-ratio:4/5;background:var(--card);border:1px solid var(--border);border-radius:var(--r);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.75rem;color:var(--muted);font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;text-align:center;padding:2rem;">
           <div style="font-size:3rem;opacity:0.25;">👨‍🍳</div>
           <span>Owner / team photo<br><span style="opacity:0.45;font-size:0.65rem;">Recommended: 500×620px</span></span>
@@ -305,7 +312,7 @@
         <div class="gallery-placeholder"><div class="ph-icon">🥩</div><span>Main food photo<br><span style="opacity:0.4;font-size:0.65rem;">600×580px</span></span></div>
       </div>
       <div class="gallery-item">
-        <!-- <img src="images/cubano.jpg" alt="Cubano sandwich" /> -->
+        <!-- <img src="images/cubano.jpg" alt="Cubano" /> -->
         <div class="gallery-placeholder"><div class="ph-icon">🥪</div><span>Cubano<br><span style="opacity:0.4;font-size:0.65rem;">280×280px</span></span></div>
       </div>
       <div class="gallery-item">
@@ -313,11 +320,11 @@
         <div class="gallery-placeholder"><div class="ph-icon">🥤</div><span>Batido<br><span style="opacity:0.4;font-size:0.65rem;">280×280px</span></span></div>
       </div>
       <div class="gallery-item">
-        <!-- <img src="images/lechon.jpg" alt="Lechon Asado" /> -->
+        <!-- <img src="images/lechon.jpg" alt="Lechon" /> -->
         <div class="gallery-placeholder"><div class="ph-icon">🍖</div><span>Lechón<br><span style="opacity:0.4;font-size:0.65rem;">280×280px</span></span></div>
       </div>
       <div class="gallery-item">
-        <!-- <img src="images/dessert.jpg" alt="Cuban desserts" /> -->
+        <!-- <img src="images/dessert.jpg" alt="Desserts" /> -->
         <div class="gallery-placeholder"><div class="ph-icon">🍮</div><span>Desserts<br><span style="opacity:0.4;font-size:0.65rem;">280×280px</span></span></div>
       </div>
     </div>
@@ -331,15 +338,25 @@
       <div class="eyebrow">What We Serve</div>
       <div class="section-title">Our Menu</div>
       <p class="section-desc">Traditional Cuban dishes made fresh daily. All entrees served with your choice of 2 side dishes.</p>
+      <div style="margin-top:1.5rem;">
+        <a href="menu.jpg" target="_blank" class="btn btn-outline">View Physical Menu</a>
+      </div>
     </div>
+
     <div class="menu-tabs-wrap">
       <div class="menu-tabs">
-        <button class="tab-btn active" onclick="showTab(event,'meals')">Meals</button>
+        <button class="tab-btn active" onclick="showTab(event,'appetizers')">Appetizers</button>
+        <button class="tab-btn" onclick="showTab(event,'breakfast')">Breakfast</button>
+        <button class="tab-btn" onclick="showTab(event,'sandwiches')">Sandwiches</button>
+        <button class="tab-btn" onclick="showTab(event,'entrees')">Entrees</button>
+        <button class="tab-btn" onclick="showTab(event,'sides')">Sides</button>
+        <button class="tab-btn" onclick="showTab(event,'desserts')">Desserts</button>
         <button class="tab-btn" onclick="showTab(event,'drinks')">Drinks &amp; Batidos</button>
       </div>
     </div>
 
-    <div class="tab-panel active" id="tab-meals">
+    <!-- APPETIZERS -->
+    <div class="tab-panel active" id="tab-appetizers">
       <div class="menu-cat">
         <div class="menu-cat-title">Aperitivos y Más — Appetizers</div>
         <div class="menu-list">
@@ -349,6 +366,10 @@
           <div class="menu-row"><div class="menu-row-left"><div class="menu-row-name">Cuban Tamale</div></div><div class="menu-row-dots"></div><div class="menu-row-price">$5</div></div>
         </div>
       </div>
+    </div>
+
+    <!-- BREAKFAST -->
+    <div class="tab-panel" id="tab-breakfast">
       <div class="menu-cat">
         <div class="menu-cat-title">Desayuno — Breakfast</div>
         <div class="menu-list">
@@ -359,6 +380,10 @@
           <div class="menu-row"><div class="menu-row-left"><div class="menu-row-name">Bistec a Caballo</div><div class="menu-row-desc">Steak &amp; 2 fried eggs · French fries or Cuban toast</div></div><div class="menu-row-dots"></div><div class="menu-row-price">$14</div></div>
         </div>
       </div>
+    </div>
+
+    <!-- SANDWICHES -->
+    <div class="tab-panel" id="tab-sandwiches">
       <div class="menu-cat">
         <div class="menu-cat-title">Sandwiches</div>
         <div class="menu-2col">
@@ -376,6 +401,10 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- ENTREES -->
+    <div class="tab-panel" id="tab-entrees">
       <div class="menu-cat">
         <div class="menu-cat-title">Entrees</div>
         <div class="menu-cat-note">All entrees served with your choice of 2 side dishes</div>
@@ -392,6 +421,10 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- SIDES -->
+    <div class="tab-panel" id="tab-sides">
       <div class="menu-cat">
         <div class="menu-cat-title">Acompañantes — Side Dishes</div>
         <div class="menu-2col">
@@ -406,6 +439,10 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="tab-panel" id="tab-desserts">
       <div class="menu-cat">
         <div class="menu-cat-title">Postres — Desserts</div>
         <div class="menu-list">
@@ -417,6 +454,7 @@
       </div>
     </div>
 
+    <!-- DRINKS -->
     <div class="tab-panel" id="tab-drinks">
       <div class="menu-cat">
         <div class="menu-cat-title">Drinks &amp; Batidos</div>
@@ -428,6 +466,7 @@
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -552,7 +591,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <img src="logo.png" alt="Pilón Authentic Cuban" style="height:70px;width:auto;margin:0 auto 1rem;display:block;" />
+  <img src="logo.png" alt="Pilón Authentic Cuban" style="height:120px;width:auto;margin:0 auto 1rem;display:block;" />
   <div class="footer-logo">Pilón Authentic Cuban</div>
   <div class="footer-tag">Cuban Roots. Real Flavor.</div>
   <div class="footer-links">
